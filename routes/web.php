@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/keuangan', function () {
     return view('keuangan'); // Mengarahkan ke file resources/views/keuangan.blade.php
 });
+
+Route::get('/admin', function () {
+    return view('admin'); // Mengarahkan ke file resources/views/admin.blade.php
+});
