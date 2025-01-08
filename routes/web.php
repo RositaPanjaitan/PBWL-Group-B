@@ -17,3 +17,10 @@ Route::get('/admin', function () {
 Route::get('/struktur-kelas', function () {
     return view('struktur_kelas');  
 });
+
+Route::get('/profil', function () {
+    return view('profil'); 
+
+});
+
+

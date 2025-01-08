@@ -45,7 +45,7 @@
     .hero {
         text-align: center;
         position: relative;
-        height: 100%; /* Full height */
+        height: 100%; 
     }
 
     .hero img {
@@ -69,17 +69,17 @@
         margin-bottom: 10px;
     }
 
-    /* Footer Section - No change */
     .footer {
     background-color: #03123C;
     color: white;
     padding: 20px 10%;
-    margin-top: 80px; /* Menambahkan jarak pada bagian atas footer */
+    margin-top: 50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
+
 
 
     .footer p {
