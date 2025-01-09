@@ -23,4 +23,7 @@ Route::get('/profil', function () {
 
 });
 
+Route::get('/galeri', function () {
+    return view('galeri'); 
 
+});
