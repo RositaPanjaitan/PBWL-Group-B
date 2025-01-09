@@ -13,3 +13,4 @@ Route::get('/keuangan', function () {
 Route::get('/admin', function () {
     return view('admin'); // Mengarahkan ke file resources/views/admin.blade.php
 });
+

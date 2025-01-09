@@ -117,11 +117,11 @@
       </a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link fw-semibold" href="/home">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/profil">Profil</a></li>
-          <li class="nav-item"><a class="nav-link" href="/Struktur Kelas">Struktur Kelas</a></li>
-          <li class="nav-item"><a class="nav-link" href="/Galeri">Galeri</a></li>
-          <li class="nav-item"><a class="nav-link" href="/Keuangan">Keuangan</a></li>
+          <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Kelas</a></li>
+          <li class="nav-item"><a class="nav-link" href="/galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="/keuangan">Keuangan</a></li>
         </ul>
       </div>
     </div>
