@@ -82,7 +82,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link fw-semibold" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/profil">Profil</a></li>
-          <li class="nav-item"><a class="nav-link" href="/struktur">Struktur Kelas</a></li>
+          <li class="nav-item"><a class="nav-link" href="/struktur_kelas">Struktur Kelas</a></li>
           <li class="nav-item"><a class="nav-link" href="/galeri">Galeri</a></li>
           <li class="nav-item"><a class="nav-link" href="/keuangan">Keuangan</a></li>
         </ul>

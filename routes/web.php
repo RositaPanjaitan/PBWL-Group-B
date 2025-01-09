@@ -14,3 +14,12 @@ Route::get('/admin', function () {
     return view('admin'); // Mengarahkan ke file resources/views/admin.blade.php
 });
 
+Route::get('/struktur_kelas', function () {
+    return view('struktur_kelas');  
+});
+
+Route::get('/profil', function () {
+    return view('profil'); 
+
+});
+
