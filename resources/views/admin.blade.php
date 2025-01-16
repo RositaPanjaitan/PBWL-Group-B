@@ -47,11 +47,6 @@
       font-weight: bold;
     }
 
-    .form-container input,
-    .form-container select {
-      margin-bottom: 70px;
-    }
-
     .btn-container {
       text-align: center;
       margin-left: 1000px;
@@ -92,45 +87,53 @@
 
   <div class="form-container">
     <h2 class="form-title">Form Keuangan</h2>
-    <form>
+
+    <!-- Notifikasi sukses -->
+    @if (session('success'))
+      <div class="alert alert-success">
+        {{ session('success') }}
+      </div>
+    @endif
+
+    <form action="{{ route('admin.store') }}" method="POST">
+      @csrf
       <div class="row mb-3">
         <div class="col-md-4">
           <label for="tanggal" class="form-label">Tanggal</label>
-          <input type="date" id="tanggal" class="form-control" placeholder="dd/mm/yyyy">
+          <input type="date" id="tanggal" name="tanggal" class="form-control" required>
         </div>
         <div class="col-md-4">
           <label for="keterangan" class="form-label">Keterangan</label>
-          <input type="text" id="keterangan" class="form-control" placeholder="Input keterangan">
+          <input type="text" id="keterangan" name="keterangan" class="form-control" required>
         </div>
         <div class="col-md-4">
           <label for="kategori" class="form-label">Kategori</label>
-          <select id="kategori" class="form-select">
+          <select id="kategori" name="kategori" class="form-select" required>
             <option value="pemasukan">Pemasukan</option>
             <option value="pengeluaran">Pengeluaran</option>
           </select>
         </div>
       </div>
-
       <div class="row mb-3">
         <div class="col-md-4">
           <label for="pemasukan" class="form-label">Pemasukan</label>
-          <input type="number" id="pemasukan" class="form-control" placeholder="Input pemasukan">
+          <input type="number" id="pemasukan" name="pemasukan" class="form-control">
         </div>
         <div class="col-md-4">
           <label for="pengeluaran" class="form-label">Pengeluaran</label>
-          <input type="number" id="pengeluaran" class="form-control" placeholder="Input pengeluaran">
+          <input type="number" id="pengeluaran" name="pengeluaran" class="form-control">
         </div>
         <div class="col-md-4">
           <label for="saldo" class="form-label">Saldo</label>
-          <input type="number" id="saldo" class="form-control" placeholder="Input saldo">
+          <input type="number" id="saldo" name="saldo" class="form-control" required>
         </div>
       </div>
-
       <div class="btn-container">
         <button type="submit" class="btn btn-primary">Simpan</button>
         <button type="button" class="btn btn-secondary">Kembali</button>
       </div>
     </form>
+    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
