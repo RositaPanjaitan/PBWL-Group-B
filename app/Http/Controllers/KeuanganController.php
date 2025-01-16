@@ -11,8 +11,17 @@ class KeuanganController extends Controller
     public function index()
     {
         return view('admin'); // Sesuai dengan nama file `admin.blade.php`
+        
     }
-
+    public function showKeuangan()
+    {
+        // Ambil semua data keuangan
+        $keuangan = Keuangan::all();
+    
+        // Kirim data ke view
+        return view('keuangan', compact('keuangan'));
+    }
+    
     // Menyimpan data keuangan
     public function store(Request $request)
     {

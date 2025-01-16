@@ -14,7 +14,6 @@
       padding: 0;
       background-color: #FFFFFF;
     }
-
     header {
       display: flex;
       justify-content: space-between;
@@ -23,7 +22,6 @@
       background-color: white;
       border-bottom: 1px solid #ddd;
     }
-
     header h1 {
       font-size: 24px;
       color: #4CAF50;
@@ -33,7 +31,6 @@
       border-bottom: 1px solid #0a0218;
       background-color: white;
     }
-
     .navbar-nav .nav-link {
       font-family: 'Garamond', serif;
       color: #03123C;
@@ -43,8 +40,6 @@
     .navbar-brand img {
       height: 40px;
     }
-
-
     table {
       width: 80%;
       margin: 20px auto;
@@ -57,7 +52,6 @@
       border: 1px solid #ddd;
       padding: 10px;
     }
-
     table th {
       background-color: #003366;
       color: white;
@@ -81,7 +75,6 @@
       z-index: 3;
       margin-bottom: px;
     }
-
     footer {
       text-align: center;
       padding: 20px 10%;
@@ -93,7 +86,6 @@
       bottom: 0;
       width: 100%;
     }
-
     .footer p {
       margin: 0;
     }
@@ -104,8 +96,7 @@
       color: white;
     }
   </style>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  </style>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -130,7 +121,7 @@
   <!-- Konten Utama -->
   <main>
     <h2 style="text-align: center; margin-top: 20px;">TABEL KEUANGAN KELAS</h2>
-    <table>
+    <table class="table table-bordered">
       <thead>
         <tr>
           <th>No</th>
@@ -143,6 +134,19 @@
         </tr>
       </thead>
       <tbody>
+        <!-- Loop untuk menampilkan data -->
+        @foreach($keuangan as $key => $keuangan)
+        <tr>
+          <td>{{ $key + 1 }}</td>
+          <td>{{ $keuangan->tanggal }}</td>
+          <td>{{ $keuangan->keterangan }}</td>
+          <td>{{ ucfirst($keuangan->kategori) }}</td>
+          <td>{{ $keuangan->pemasukan }}</td>
+          <td>{{ $keuangan->pengeluaran }}</td>
+          <td>{{ $keuangan->saldo }}</td>
+        </tr>
+        @endforeach
+      </tbody>
     </table>
   </main>
 
@@ -156,5 +160,4 @@
     </div>
   </footer>
 </body>
-
 </html>
