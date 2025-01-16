@@ -26,6 +26,9 @@
             color: #03123C;
             font-size: 1.1rem;
         }
+        .navbar-nav .nav-item.active .nav-link {
+            color: #800a0a; 
+            }
 
         .navbar-brand img {
             height: 40px;
@@ -90,22 +93,32 @@
     </head>
 
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="{{ asset('img/logo.jpg') }}" alt="SILIMA Logo">
-                </a>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link fw-semibold" href="/home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/profil">Profil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/struktur_kelas">Struktur Kelas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/galeri">Galeri</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/keuangan">Keuangan</a></li>
-                    </ul>
-                </div>
+         <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+            <img src="{{ asset('img/logo.jpg') }}" alt="SILIMA Logo">
+            </a>
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+                <a class="nav-link fw-semibold" href="/">Home</a>
+                </li>
+                <li class="nav-item {{ Request::is('profil') ? 'active' : '' }}">
+                <a class="nav-link" href="/profil">Profil</a>
+                </li>
+                <li class="nav-item {{ Request::is('struktur_kelas') ? 'active' : '' }}">
+                <a class="nav-link" href="/struktur_kelas">Struktur Kelas</a>
+                </li>
+                <li class="nav-item {{ Request::is('galeri') ? 'active' : '' }}">
+                <a class="nav-link" href="/galeri">Galeri</a>
+                </li>
+                <li class="nav-item {{ Request::is('keuangan') ? 'active' : '' }}">
+                <a class="nav-link" href="/keuangan">Keuangan</a>
+                </li>
+            </ul>
             </div>
+        </div>
         </nav>
 
         <!-- Hero Section -->

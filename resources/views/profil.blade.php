@@ -9,10 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
-        body {
+         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #03123C;
+            background-color: #FFFFFF;
         }
 
         .navbar {
@@ -25,7 +25,33 @@
             color: #03123C;
             font-size: 1.1rem;
         }
+        .navbar-nav .nav-item.active .nav-link {
+            color: #800a0a; 
+            }
 
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .hero-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background: linear-gradient(to bottom, #ffffff 50%, #03123C 50%);
+            padding: 50px 0;
+        }
+
+        .hero {
+            text-align: center;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .hero img {
+            width: 95%;
+            height: auto;
+            position: relative;
+        }
 
         .footer {
             background-color: #03123C;
@@ -140,24 +166,33 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="{{ asset('img/logo.jpg') }}" alt="SILIMA Logo" height="40">
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/profil">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/struktur_kelas">Struktur Kelas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/galeri">Galeri</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/keuangan">Keuangan</a></li>
-                </ul>
-            </div>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+        <img src="{{ asset('img/logo.jpg') }}" alt="SILIMA Logo">
+        </a>
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+            <a class="nav-link fw-semibold" href="/">Home</a>
+            </li>
+            <li class="nav-item {{ Request::is('profil') ? 'active' : '' }}">
+            <a class="nav-link" href="/profil">Profil</a>
+            </li>
+            <li class="nav-item {{ Request::is('struktur_kelas') ? 'active' : '' }}">
+            <a class="nav-link" href="/struktur_kelas">Struktur Kelas</a>
+            </li>
+            <li class="nav-item {{ Request::is('galeri') ? 'active' : '' }}">
+            <a class="nav-link" href="/galeri">Galeri</a>
+            </li>
+            <li class="nav-item {{ Request::is('keuangan') ? 'active' : '' }}">
+            <a class="nav-link" href="/keuangan">Keuangan</a>
+            </li>
+        </ul>
         </div>
+    </div>
     </nav>
-   
     <!-- Tentang Kami -->
 <section class="tentang-kami">
     <div class="container d-flex align-items-center justify-content-between">
