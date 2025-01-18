@@ -169,9 +169,9 @@
     <footer class="footer">
             <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
             <div class="social-icons">
-                <a href="#"><i class="bi bi-whatsapp"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/6289525681442"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/si5.official?igsh=MTlvMGJzMXI5djcwNA=="><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61571740951116"><i class="bi bi-facebook"></i></a>
             </div>
         </footer>
     
