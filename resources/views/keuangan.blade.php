@@ -174,6 +174,7 @@
         </div>
     </main>
 
+<<<<<<< HEAD
     <footer class="footer">
         <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
         <div class="social-icons">
@@ -182,6 +183,49 @@
             <a href="#"><i class="bi bi-facebook"></i></a>
         </div>
     </footer>
+=======
+  <!-- Konten Utama -->
+  <main>
+    <h2 style="text-align: center; margin-top: 20px;">TABEL KEUANGAN KELAS</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Tanggal</th>
+          <th>Keterangan</th>
+          <th>Kategori</th>
+          <th>Pemasukan</th>
+          <th>Pengeluaran</th>
+          <th>Saldo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop untuk menampilkan data -->
+        @foreach($keuangan as $key => $keuangan)
+        <tr>
+          <td>{{ $key + 1 }}</td>
+          <td>{{ $keuangan->tanggal }}</td>
+          <td>{{ $keuangan->keterangan }}</td>
+          <td>{{ ucfirst($keuangan->kategori) }}</td>
+          <td>{{ $keuangan->pemasukan }}</td>
+          <td>{{ $keuangan->pengeluaran }}</td>
+          <td>{{ $keuangan->saldo }}</td>
+        </tr>
+        @endforeach
+      </tbody>
+    </table>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
+    <div class="social-icons">
+        <a href="https://wa.me/6289525681442"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/si5.official?igsh=MTlvMGJzMXI5djcwNA=="><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61571740951116"><i class="bi bi-facebook"></i></a>
+    </div>
+  </footer>
+>>>>>>> c264f5e7f212917d81131c0eb892d31435fafcec
 </body>
 </html>
 

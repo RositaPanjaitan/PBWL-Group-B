@@ -148,6 +148,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Footer -->
     <footer class="footer">
         <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
@@ -158,5 +159,17 @@
         </div>
     </footer>
 </body>
+=======
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
+            <div class="social-icons">
+            <a href="https://wa.me/6289525681442"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/si5.official?igsh=MTlvMGJzMXI5djcwNA=="><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61571740951116"><i class="bi bi-facebook"></i></a>
+            </div>
+        </footer>
+    </body>
+>>>>>>> c264f5e7f212917d81131c0eb892d31435fafcec
 
 </html>
