@@ -12,7 +12,7 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Garamond', sans-serif;
             background-color: #FFFFFF;
         }
 
@@ -22,7 +22,7 @@
         }
 
         .navbar-nav .nav-link {
-            font-family: 'Garamond', serif;
+            font-family: 'Prociono', serif;
             color: #03123C;
             font-size: 1.1rem;
         }
@@ -42,10 +42,13 @@
             padding: 50px 0;
         }
 
-        .hero {
+        .hero font {
             text-align: center;
             position: relative;
-            padding: 20px 0;
+            padding: 48px 0;
+            font-family: 'Beau Rivage', cursive;
+
+        
         }
 
         .hero img {
@@ -93,7 +96,6 @@
     </head>
 
     <body>
-         <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="#">
@@ -121,7 +123,6 @@
         </div>
         </nav>
 
-        <!-- Hero Section -->
         <div class="hero-container">
             <div class="hero">
                 <div class="container">
@@ -136,7 +137,6 @@
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="footer">
             <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
             <div class="social-icons">

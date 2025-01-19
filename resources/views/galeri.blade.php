@@ -10,7 +10,7 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Abhaya Libre', sans-serif;
             background-color: #FFFFFF;
         }
 
@@ -28,7 +28,6 @@
             color: #800a0a; 
         }
 
-
         .navbar-brand img {
             height: 40px;
         }
@@ -44,14 +43,16 @@
         }
 
         .card-body h5 {
-            text-align: justify;
+            text-align: center;
             font-size: 1rem;
             margin-top: 10px;
+            font-family: 'Abhaya Libre', serif;
         }
 
         .card img {
-            width: 100%; 
-            height: auto;
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
             border-radius: 10px; 
         }
 
@@ -82,7 +83,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand" href="#">
@@ -126,7 +126,7 @@
                     <div class="card">
                         <img src="{{ asset('img/PDH.jpg') }}" alt="Hari PDH">
                         <div class="card-body">
-                        <h5 style="text-align: justify;">Hari PDH</h5>
+                        <h5 class="card-title">Hari PDH</h5>
                         </div>
                     </div>
                 </div>

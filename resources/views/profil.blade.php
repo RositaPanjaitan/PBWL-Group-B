@@ -11,7 +11,7 @@
     <style>
          body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Abhaya Libre Medium', sans-serif;
             background-color: #FFFFFF;
         }
 
@@ -72,51 +72,80 @@
             color: white;
         }
 
-        /* Visi & Misi */
-        .visi-misi {
-            background-color: white;
-            color: #03123C;
-            padding: 30px 10%;
-        }
+.visi-misi {
+    background-color: white;
+    padding: 40px 10%; 
+    color: #03123C; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center; 
+}
 
-        .visi-misi .card {
-            border: 1px solid #03123C;
-            border-radius: 8px;
-            padding: 60px;
-            background-color: #f9f9f9;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            height: 100%;
-        }
+.visi-misi .card {
+    background-color: #ffffff; 
+    border: 1px solid #03123C; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 40px;
+    max-width: 500px; 
+    width: 100%; 
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
 
-        .visi-misi .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
+.visi-misi .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
 
-        .visi-misi .card h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            color: #03123C;
-        }
+.visi-misi .card h3 {
+    font-family: 'Georgia', serif; 
+    font-size: 2.4rem; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    color: #03123C; 
+    text-transform: uppercase;
+}
 
-        .visi-misi .card p,
-        .visi-misi .card ul {
-            font-size: 1rem;
-            line-height: 1.6;
-            text-align: justify;
-            color: #555;
-        }
+.visi-misi .card p {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    text-align: justify; 
+    color: #333; 
+}
 
-        .visi-misi .card ul {
-            padding-left: 20px;
-            list-style-type: disc;
-        }
+.visi-misi .card ul {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    text-align: justify; 
+    color: #333; 
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
 
-        /* Tentang Kami */
+@media (max-width: 768px) {
+    .visi-misi {
+        padding: 20px 5%; 
+    }
+
+    .visi-misi .card {
+        padding: 30px; 
+    }
+
+    .visi-misi .card h3 {
+        font-size: 2rem; 
+    }
+
+    .visi-misi .card p,
+    .visi-misi .card ul {
+        font-size: 1rem; 
+    }
+}
+
+
         .tentang-kami {
             background-color: #03123C;
             color: white;
@@ -135,7 +164,6 @@
             line-height: 1.8;
         }
 
-        /* Profil */
         .profil {
             background-color: #03123C;
             color: white;
@@ -193,7 +221,6 @@
         </div>
     </div>
     </nav>
-    <!-- Tentang Kami -->
 <section class="tentang-kami">
     <div class="container d-flex align-items-center justify-content-between">
         <div class="text-container" style="flex: 1; padding-right: 20px;">
@@ -209,7 +236,6 @@
 
 
 
-    <!-- Visi dan Misi -->
     <section class="visi-misi">
         <div class="row d-flex align-items-stretch justify-content-center">
             <div class="col-md-5">
@@ -231,13 +257,10 @@
         </div>
     </section>
 
-    <!-- Profil -->
-  <!-- Profil Section -->
   <section class="profil">
     <h2>PROFIL SISTEM INFORMASI 5</h2>
     <div id="carouselProfil" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col-md-4 text-center">
@@ -257,7 +280,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Slide 2 -->
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col-md-4 text-center">
@@ -277,7 +299,6 @@
                 </div>
             </div>
         </div>
-        <!-- Carousel Navigation -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselProfil" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -288,9 +309,7 @@
         </button>
     </div>
 </section>
- <!-- Bootstrap JS -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Footer -->
     <footer class="footer">
         <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
         <div class="social-icons">

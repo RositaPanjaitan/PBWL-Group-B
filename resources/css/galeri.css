@@ -1,0 +1,128 @@
+.column-2 {
+    gap: var(--space-md);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.image1 {
+    height: 6px;
+    object-fit: cover;
+}
+
+.image2 {
+    height: 256px;
+    margin-left: 10px;
+    object-fit: cover;
+
+    @media only screen and (max-width: 1050px) {
+        margin-left: 0px
+    }
+}
+
+.text1 {
+    margin-top: 14px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 28px;
+
+    @media only screen and (max-width: 1050px) {
+        margin-left: 0px;
+    }
+}
+
+.columnharipdh {
+    margin-top: 120px;
+    gap: 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 1050px) {
+        gap: 69px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        gap: 46px;
+    }
+}
+
+.columnalbumfoto {
+    padding-left: 56px;
+    padding-right: 392px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media only screen and (max-width: 1050px) {
+        padding-left: var(--space-xl);
+        padding-right: var(--space-xl);
+    }
+}
+
+.albumfoto {
+    color: var(--indigo_900_01) limportant;
+}
+
+gridharipdh {
+    width: 92%;
+    display: grid;
+    gap: 46px;
+    justify-content: center;
+    grid-template-columns: repeat (3, minmax(0, 1fr));
+    justify-content: center;
+
+    @media only screen and (max-width: 1050px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1 {
+    gap: 8px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+column-3 {
+    gap: 12px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.column-4 {
+    gap: var(--space-xl);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.footer2024proje-3 {
+    margin-top: 6px;
+    display: flex;
+    background-color: var(--gray_900);
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+    padding: 46px 32px;
+
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column: padding-top: var(--space-xl);
+        padding-bottom: var(--space-xl);
+    }
+
+    @media only screen and (max-width: 550px) {
+        padding: var(--space-xl);
+    }
+}
