@@ -17,23 +17,23 @@
         }
 
         .navbar {
-            border-bottom: 1px solid #0a0218;
+            border-bottom: 1px solid #03123C;
             background-color: white;
         }
 
         .navbar-nav .nav-link {
-            font-family: 'Prociono', serif;
+            font-family: 'Garamond', serif;
             color: #03123C;
             font-size: 1.1rem;
         }
+
         .navbar-nav .nav-item.active .nav-link {
             color: #800a0a; 
-            }
+        }
 
         .navbar-brand img {
             height: 40px;
         }
-
         .hero-container {
             position: relative;
             width: 100%;

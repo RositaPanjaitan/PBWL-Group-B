@@ -20,24 +20,23 @@
     }
 
     .navbar {
-        border-bottom: 1px solid #0a0218;
-        background-color: white;
-    }
+            border-bottom: 1px solid #03123C;
+            background-color: white;
+        }
 
-    .navbar-nav .nav-link {
-        font-family: 'Playfair Display', serif;
-        color: #03123C;
-        font-size: 1.1rem;
-        font-weight: 700;
-    }
+        .navbar-nav .nav-link {
+            font-family: 'Garamond', serif;
+            color: #03123C;
+            font-size: 1.1rem;
+        }
 
-    .navbar-nav .nav-item.active .nav-link {
+        .navbar-nav .nav-item.active .nav-link {
             color: #800a0a; 
         }
 
-    .navbar-brand img {
-        height: 40px;
-    }
+        .navbar-brand img {
+            height: 40px;
+        }
 
     /* Hero Section */
     .hero-container {
@@ -148,18 +147,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
-        <div class="social-icons">
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-        </div>
-    </footer>
-</body>
-=======
+
         <!-- Footer -->
         <footer class="footer">
             <p>© 2024 Project Website Kelas Sistem Informasi-5. All Right Reserved</p>
@@ -170,6 +158,5 @@
             </div>
         </footer>
     </body>
->>>>>>> c264f5e7f212917d81131c0eb892d31435fafcec
 
 </html>
